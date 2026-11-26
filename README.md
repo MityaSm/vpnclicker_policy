@@ -1,68 +1,100 @@
 # Privacy Policy
 
-**Last Updated: January 4, 2026**
+**Last Updated: November 26, 2026**
 
 ## Introduction
-This Privacy Policy describes how "VPN: Idle Tycoon" ("the Game", "we", "us", or "our") collects, uses, and protects your information. We are committed to protecting your privacy in compliance with Google Play Policies and international data protection standards (GDPR, COPPA).
+This Privacy Policy describes how **Ignis Apps** ("we", "us", or "our") collects, uses, shares, and protects information when you use the mobile game **"Hacker: Idle Tycoon"** ("the Game") on iOS (Apple App Store) and Android (Google Play).
+
+We are committed to protecting your privacy in compliance with applicable laws and platform policies, including the Apple App Store Review Guidelines, Google Play Policies, the General Data Protection Regulation (GDPR / UK GDPR), the California Consumer Privacy Act (CCPA / CPRA), and children’s privacy laws (such as COPPA).
 
 ## Information We Collect
 
-### 1. Automatically Collected Information
-* **Local Game Data:** Game progress (currency, levels), upgrade history, and settings. Stored locally via Unity PlayerPrefs.
-* **Technical Identifiers:** We collect **Advertising ID (AAID), Android ID, and IP addresses**. These are processed via third-party SDKs for functional and analytical purposes.
+### 1. Gameplay & Account Data (Local and Cloud)
+* **Local Game Data:** Game progress (in-game currency, levels, upgrades, settings, VIP status expiration, and processed transaction IDs) is stored locally on your device via Unity `PlayerPrefs`.
+* **Anonymous Cloud Profile:** To enable leaderboards, competitive features, referrals, and VIP status synchronization, we assign you a pseudonymous identifier via **Firebase Authentication (Anonymous Sign-In)** (or a locally generated fallback ID if offline).
+* **Cloud Gameplay Data:** Through **Cloud Firestore**, we store pseudonymous gameplay records linked to your anonymous User ID, including lifetime and weekly earnings, player and season levels, equipped virtual items, country/region code (derived from your device’s regional settings), in-game shield timestamps, Cyber VIP expiration dates, referral/invite records, and in-game attack/defense inbox notifications.
 
-### 2. Third-Party Services
-The Game integrates the following services:
+### 2. Technical, Device & Advertising Identifiers
+Depending on your platform, region, and consent choices, we and our third-party SDK partners may collect:
+* **On iOS:** **Identifier for Advertisers (IDFA)** — collected **only** if you grant permission through Apple’s App Tracking Transparency (ATT) prompt; **Identifier for Vendor (IDFV)**; and **SKAdNetwork** attribution data.
+* **On Android:** **Google Advertising ID (AAID)** and Android / App Set IDs.
+* **Device & Network Information:** IP address, device model, operating system version, system language, and time zone/region settings.
 
-**Google AdMob (Advertising):**
-- Collects Device IDs and IP addresses to deliver ads.
-- Uses AdMob’s "Tag for Child Directed Treatment" for our 9+ audience.
-- Max ad content rating is set to "G" (General).
-- [Google Privacy Policy](https://policies.google.com/privacy)
+### 3. In-App Purchases
+The Game offers optional in-app purchases (such as the 30-day **Cyber VIP** pass) processed directly by **Apple (App Store / StoreKit)** or **Google (Google Play Billing)** via Unity IAP.
+* We do **not** collect, process, or have access to your credit card numbers, bank details, billing address, or Apple ID / Google account credentials.
+* We only receive non-sensitive purchase confirmations and transaction identifiers to grant and restore your in-game VIP benefits.
 
-**Firebase Analytics (Google Analytics):**
-- Collects app usage statistics, session duration, and crash reports.
-- Uses IP addresses for **approximate geographic location detection** (country/city level).
-- [Firebase Privacy Information](https://firebase.google.com/support/privacy)
+### 4. Local Notifications
+With your permission, the Game schedules **local** on-device notifications (such as boost expiration, daily rewards, offline earnings, and gameplay cooldown reminders). These notifications are processed locally on your device and do not collect remote push notification tokens.
 
-**Unity SDK:**
-- Collects hardware information (device model, OS version) for performance optimization.
-- [Unity Privacy Policy](https://unity.com/legal/privacy-policy)
+## Third-Party Services
+The Game integrates the following third-party services, each governed by its own privacy policy:
+
+1. **Google AdMob & Google UMP SDK (Advertising & Consent Management):**
+   - Delivers optional rewarded video ads and manages regional privacy consent dialogs (GDPR/EEA/UK and US state laws).
+   - Processes device/advertising identifiers (AAID, or IDFA if authorized via ATT), IP addresses, and ad interaction data.
+   - [Google Privacy Policy](https://policies.google.com/privacy)
+
+2. **Unity Ads (Ad Mediation via Google AdMob):**
+   - Acts as an advertising mediation partner to deliver rewarded ads.
+   - May process device identifiers, IP addresses, and ad performance metrics in accordance with your consent and ATT settings.
+   - [Unity Privacy Policy](https://unity.com/legal/privacy-policy)
+
+3. **Google Firebase (Authentication, Cloud Firestore, Analytics, Remote Config):**
+   - **Firebase Authentication:** Provides anonymous authentication without requiring names, emails, or passwords.
+   - **Cloud Firestore:** Stores pseudonymous leaderboard, country ranking, hacking inbox, invite, and VIP sync data.
+   - **Firebase Analytics (with Google Consent Mode v2):** Collects gameplay events, session duration, and feature usage, and uses IP addresses for approximate geographic location (country/city level) without storing precise GPS location.
+   - **Firebase Remote Config:** Delivers in-game news and configuration updates.
+   - [Firebase Privacy Information](https://firebase.google.com/support/privacy)
+
+4. **Apple App Store (StoreKit) & Unity Technologies (Unity Engine / Unity IAP):**
+   - Collects basic hardware/OS telemetry for engine stability and processes store transactions and purchase restoration.
+   - [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
+   - [Unity Privacy Policy](https://unity.com/legal/privacy-policy)
+
+5. **External Links (Discord):**
+   - The Game contains an optional link to our official Discord community. Clicking that link takes you outside the Game to a third-party platform governed by [Discord’s Privacy Policy](https://discord.com/privacy).
 
 ## How We Use Your Information
-We use the collected information for:
-- **Game Functionality:** Saving progress and calculating offline earnings.
-- **Advertising:** Delivering rewarded videos and managing ad frequency.
-- **Analytics:** Monitoring app performance and improving user experience.
-- **Security & Fraud Prevention:** Using IP addresses to detect bot activity and ensure fair gameplay.
+We use the collected information strictly for:
+- **Game Functionality:** Saving progress, calculating offline earnings, powering leaderboards and PvP/hacking mechanics, and delivering in-game news.
+- **In-App Purchases:** Verifying and restoring Cyber VIP access across sessions.
+- **Advertising:** Serving optional rewarded video ads, preventing ad fraud, and measuring ad performance.
+- **Analytics & Optimization:** Understanding gameplay progression, balancing economy, and improving performance across iOS and Android devices.
+- **Security & Fair Play:** Detecting automated abuse/bots and protecting competitive leaderboards.
 
 ## Limited Personal Data Collection
-We do **NOT** collect direct identification data such as:
-- Names, Email addresses, or Phone numbers.
-- Physical addresses or Payment information.
-- Contacts, photos, or sensitive personal data.
+We do **NOT** collect direct personal identification data such as:
+- Real names, email addresses, or phone numbers (unless you voluntarily contact us by email for support).
+- Physical addresses or payment card details.
+- Contacts, photos, camera, microphone, or precise GPS location.
 
-## Data Safety and Security
-- **Encryption:** All data transmitted to third-party services is encrypted via HTTPS.
-- **Data Sharing:** We share technical identifiers with the partners listed above.
-- **Data Deletion:** You can delete all local data by uninstalling the Game or clearing the app cache in device settings.
+## Data Retention, Security & Deletion
+- **Encryption:** All network communications with Firebase, AdMob, Unity Ads, and App Store / Google Play services are encrypted in transit via HTTPS/TLS.
+- **Retention:** Local data remains on your device until you uninstall the Game or clear app data. Cloud leaderboard and gameplay records are retained while the Game operates or until deleted upon request.
+- **How to Delete Your Data:**
+  - **Local Data:** Uninstall the Game (or clear app storage in Android settings).
+  - **Cloud Data (Firestore & Analytics):** You may request deletion of your pseudonymous cloud profile and associated gameplay records by emailing us at **ge.vovabelikov@gmail.com** and providing your in-game **Player ID** (displayed in the Profile/Statistics screen). We will process verified deletion requests within 30 days.
 
-## Children’s and Family Privacy
-The Game is rated for users aged **9 and older**. We comply with the Google Play Families Policy:
-- We do not knowingly collect personal information from children.
-- We restrict data collection to persistent identifiers necessary for internal operations.
+## Children’s Privacy
+The Game is intended for a general audience and is **not** directed at children under the age of 13 (or the minimum age required for digital consent in your country, such as 13–16 in the EEA/UK). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided personal data, please contact us at **ge.vovabelikov@gmail.com** so we can delete it promptly.
 
 ## International Data Transfers
-Your data may be transferred to and processed in countries outside your residence (including the United States) where our service providers operate. These transfers comply with applicable data protection laws.
+Your information may be processed on servers located outside your country of residence (including the United States) where Google, Unity, and our infrastructure partners operate. Such transfers rely on appropriate safeguards recognized under applicable data protection laws (such as Standard Contractual Clauses).
 
 ## Your Rights and Choices
-- **Opt-out of Ads:** Android Settings > Google > Ads > Opt out of Ads Personalization.
-- **Data Access:** All gameplay data is stored locally and accessible via the Game interface.
+Depending on your location, you have the right to manage your privacy and request access to or deletion of your data:
+- **iOS Tracking (ATT / IDFA):** You can allow, deny, or revoke ad tracking at any time in **iOS Settings > Privacy & Security > Tracking** (or **Settings > Hacker: Idle Tycoon > Tracking**).
+- **Android Ads Personalization:** You can reset or delete your Advertising ID or opt out of personalized ads in **Android Settings > Google > Ads**.
+- **In-Game Privacy Settings (GDPR / EEA / UK):** You can review or withdraw your advertising and analytics consent at any time using the **Privacy** button in the in-game **Profile / Statistics** menu.
+- **Notifications:** You can enable or disable local game notifications at any time in your device’s system settings.
+- **Access & Deletion Requests:** Contact us at **ge.vovabelikov@gmail.com** to exercise your rights under GDPR, UK GDPR, or CCPA/CPRA.
 
 ## Contact Information
-If you have questions, please contact:
+If you have questions or requests regarding this Privacy Policy, please contact:
 - **Developer:** Ignis Apps
-- **Email:** ge.vovabelikov@gmail.com
+- **Email:** [ge.vovabelikov@gmail.com](mailto:ge.vovabelikov@gmail.com)
 
-## Consent
-By installing and playing "VPN: Idle Tycoon", you consent to the collection and use of information as described in this Privacy Policy.
+## Changes to This Policy & Consent
+We may update this Privacy Policy from time to time to reflect updates to the Game or legal requirements. The "Last Updated" date at the top indicates the latest revision. By installing or continuing to use **"Hacker: Idle Tycoon"**, you acknowledge the practices described in this Privacy Policy (subject to your explicit consent choices where required by law).
